@@ -29,10 +29,10 @@
 <script src="../build/ckeditor.js"></script>
 <script>
 	ClassicEditor.create( document.querySelector('#editor'), {
-		s3Upload: {
-			policyUrl: "http://127.0.0.1/my-upload-endpoint",
-			mapUrl: ({ location, bucket, key }) => {
-				return location;
+		customUpload: {
+			upload: (file, cb) => {
+				console.log("file", file)
+				cb("https://google.com")
 			}
 		}
 	}).then(editor => {

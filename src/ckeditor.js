@@ -7,7 +7,7 @@
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
-import S3UploadAdapter from 'ckeditor5-s3-upload';
+import CustomUploadAdapter from 'ckeditor5-custom-upload';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
@@ -40,7 +40,7 @@ export default class ClassicEditor extends ClassicEditorBase {}
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
 	Essentials,
-	S3UploadAdapter,
+	CustomUploadAdapter,
 	Autoformat,
 	FontFamily,
 	FontSize,

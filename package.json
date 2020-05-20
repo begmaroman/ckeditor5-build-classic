@@ -48,7 +48,8 @@
     "@ckeditor/ckeditor5-table": "^19.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^19.0.0",
     "@ckeditor/ckeditor5-typing": "^19.0.0",
-    "ckeditor5-s3-upload": "github:begmaroman/ckeditor5-s3-upload",
+    "ckeditor5-custom-upload": "github:begmaroman/ckeditor5-custom-upload",
+    "@ckeditor/ckeditor5-alignment": "^19.0.0",
     "eslint": "^5.5.0",
     "eslint-config-ckeditor5": "^2.0.0",
     "husky": "^1.3.1",
@@ -96,8 +97,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "dependencies": {
-    "@ckeditor/ckeditor5-alignment": "^19.0.0"
   }
 }
